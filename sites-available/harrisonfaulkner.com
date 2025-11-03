@@ -24,6 +24,8 @@ server {
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
 
+
+
 }
 server {
     if ($host = www.request.harrisonfaulkner.com) {
@@ -95,6 +97,7 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
+
 }
 
     server {
@@ -131,6 +134,7 @@ server {
     ssl_certificate_key /etc/letsencrypt/live/plex.harrisonfaulkner.com/privkey.pem; # managed by Certbot
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
 
 }
 
